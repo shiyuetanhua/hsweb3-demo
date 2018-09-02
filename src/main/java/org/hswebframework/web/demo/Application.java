@@ -22,7 +22,6 @@ import org.springframework.context.event.EventListener;
 @SpringBootApplication
 @EnableCaching //开启缓存
 @EnableAccessLogger //开启访问日志
-@ComponentScan("org.hswebframework.web.demo")
 @MapperScan(value = "org.hswebframework.web.demo", markerInterface = Dao.class) //扫描mybatis dao
 @EnableAopAuthorize //启用aop权限控制
 @EnableSwagger2Doc
